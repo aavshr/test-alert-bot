@@ -1,0 +1,38 @@
+{
+    "name": "twitch-alert-bot",
+    "description": "Telegram Bot for sending notification about start of a broadcast on Twitch in a chat",
+    "runtime": "python3.9",
+    "env": [
+        {
+            "key": "BOT_TOKEN",
+            "description": "Telegram Bot Token. https://core.telegram.org/bots#6-botfather",
+            "required": true
+        },
+        {
+            "key": "TELEGRAM_CHAT_ID",
+            "description": "Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
+            "required": true
+        },
+        {
+            "key": "MESSAGE",
+            "description": "The text of the message that will be sent to the chat. Read more in the README",
+            "default": "The streamer {broadcaster_user_name} has started the broadcast.\n<a href=\"https://twitch.tv/{broadcaster_user_login}\">Run to watch!</a>",
+            "required": true
+        },
+        {
+            "key": "TWITCH_BROADCASTER_LOGIN",
+            "description": "Twitch streamer login. For example dreamhackcs",
+            "required": true
+        },
+        {
+            "key": "TWITCH_ID",
+            "description": "ID of your twitch app. Read more in the README",
+            "required": true
+        },
+        {
+            "key": "TWITCH_SECRET",
+            "description": "The secret key of your twitch app. Read more in the README",
+            "required": true
+        }
+    ]
+}

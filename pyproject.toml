@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "twitch-alert-bot"
+version = "0.1.0"
+description = "Telegram Bot for sending notification about start of a broadcast on Twitch in a chat"
+authors = ["Dmitry Davis"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Flask = "^2.0.2"
+requests = "^2.26.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.10b0"
+isort = "^5.10.0"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
