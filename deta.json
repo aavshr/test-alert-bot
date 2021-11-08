@@ -16,8 +16,7 @@
         {
             "key": "MESSAGE",
             "description": "The text of the message that will be sent to the chat. Read more in the README",
-            "default": "The streamer {broadcaster_user_name} has started the broadcast.\n<a href=\"https://twitch.tv/{broadcaster_user_login}\">Run to watch!</a>",
-            "required": true
+            "default": "The streamer {broadcaster_user_name} has started the broadcast.\n<a href=\"https://twitch.tv/{broadcaster_user_login}\">Run to watch!</a>"
         },
         {
             "key": "TWITCH_BROADCASTER_LOGIN",
